@@ -15,7 +15,7 @@ function Notification(props) {
     <div>
       <Snackbar
         open={notify.isOpen}
-        autoHideDuration={1200}
+        autoHideDuration={1000}
         onClose={handleClose}
         anchorOrigin={{ vertical: "top", horizontal: notify.position }}
       >

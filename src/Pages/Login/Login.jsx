@@ -69,9 +69,8 @@ function Login() {
     }    
   }
   return (
-
-    <div style={{backgroundColor:'ghostwhite',height:"100vh"}}>
-      <div className={login.loginContainer} style={{width:"40ch",position:"absolute",top:"150px",left:"40%", height:'40ch', margin:"auto", boxShadow: 'rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px'}}>
+    <div style={{backgroundColor:'ghostwhite',height:"100vh",display:"flex",justifyContent:"center",margin:"auto"}}>
+      <div className={login.loginContainer} style={{marginTop:"100px",width:"40ch",height:'40ch', boxShadow: 'rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px'}}>
       <Notification notify={notify} setNotify={setNotify} />
         <Avatar sx={{ width: '4ch',margin:"auto",marginTop:"10px"}}>
           <LockIcon />
@@ -82,8 +81,7 @@ function Login() {
             id="outlined-start-adornment"
             sx={{ m: 1, width: '35ch' }}
             name="email"
-            onChange={handleInput}
-            
+            onChange={handleInput}            
           />
           <br />
           <FormControl sx={{ m: 1, width: '35ch' }} variant="outlined">
