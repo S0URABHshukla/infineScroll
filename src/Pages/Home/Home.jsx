@@ -17,7 +17,7 @@ function Home() {
       setList((prev)=>[...prev,...data.results])
       setLoader(false);
     },1000)
-      }
+  }
   useEffect(()=>
   {
     fetchApi();
@@ -49,8 +49,7 @@ function Home() {
 
   
   return (
-    <div>
-      
+    <div>      
       <Navbar/>
       {loader
       ?

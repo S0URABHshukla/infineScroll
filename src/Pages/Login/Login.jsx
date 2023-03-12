@@ -70,12 +70,12 @@ function Login() {
   }
   return (
     <div style={{backgroundColor:'ghostwhite',height:"100vh",display:"flex",justifyContent:"center",margin:"auto"}}>
-      <div className={login.loginContainer} style={{marginTop:"100px",width:"40ch",height:'40ch', boxShadow: 'rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px'}}>
+      <div className={login.loginContainer}>
       <Notification notify={notify} setNotify={setNotify} />
         <Avatar sx={{ width: '4ch',margin:"auto",marginTop:"10px"}}>
           <LockIcon />
         </Avatar>
-        <h2 style={{fontFamily:"cursive",color:"ThreeDDarkShadow"}}>LOGIN</h2>
+        <h2 className={login.login}>LOGIN</h2>
         <TextField
             label="Email"
             id="outlined-start-adornment"

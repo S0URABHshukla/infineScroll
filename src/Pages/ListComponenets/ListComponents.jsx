@@ -1,9 +1,10 @@
 import React from 'react'
 import DisplayList from '../DisplayList/DisplayList'
+import lists from './ListComponents.module.css'
 
 function ListComponents({list}) {
   return (
-    <div style={{display:"grid", gridTemplateColumns:"repeat(4,1fr)",backgroundColor:'#BBCCF7',gap:"20px",padding:"20px"}}>
+    <div className={lists.container} >
         {list?.map((e,i)=>
         {
             return <DisplayList arr={e} key={i}/>

@@ -1,0 +1,24 @@
+.container
+{
+    position: relative;
+}
+.navbar
+{
+    background-color: orange;
+    height: 37px;
+}
+.head
+{
+    font-size:25px;
+    font-weight:700;
+}
+
+/* Small screens */
+@media only screen and (max-width: 400px) {
+    /* Styles for small screens go here */
+    .head {
+        position: absolute;       
+        left: 0;        
+    }
+    
+  }
