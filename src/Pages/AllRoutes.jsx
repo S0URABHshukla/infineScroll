@@ -12,8 +12,7 @@ function AllRoutes() {
         <Route path='/home' element={ <PrivateRoute> <Home/> </PrivateRoute> }/>
         <Route path='/' element={ <PrivateRoute> <Home/> </PrivateRoute>}/>
         <Route path='/login' element={<Login/>}/>
-        <Route path='*' element={<PageNotFound/>}/>
-        
+        <Route path='*' element={<PageNotFound/>}/>        
       </Routes>
     </div>
   )

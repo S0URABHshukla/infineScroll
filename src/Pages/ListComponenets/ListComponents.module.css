@@ -11,7 +11,6 @@
 
 /* Small screens */
 @media only screen and (max-width: 540px) {
-    /* Styles for small screens go here */
     .container {
         display:grid; 
         grid-template-columns:repeat(1,1fr);
@@ -23,35 +22,30 @@
   
   /* Medium screens */
   @media only screen and (min-width: 541px) and (max-width: 800px) {
-    /* Styles for medium screens go here */
+
     .container {
         display:grid; 
         grid-template-columns:repeat(2,1fr);
         background-color:#BBCCF7;
         gap:20px;
-        /* padding:20px; */
     }
   }
-
+  /* Medium plus screens */
   @media only screen and (min-width: 801px) and (max-width: 1023px) {
-    /* Styles for medium screens go here */
     .container {
         display:grid; 
         grid-template-columns:repeat(3,1fr);
         background-color:#BBCCF7;
         gap:20px;
-        /* padding:20px; */
     }
   }
   
   /* Large screens */
   @media only screen and (min-width: 1024px) {
-    /* Styles for large screens go here */
     .container {
         display:grid; 
         grid-template-columns:repeat(4,1fr);
         background-color:#BBCCF7;
         gap:20px;
-        /* padding:20px; */
     }
   }

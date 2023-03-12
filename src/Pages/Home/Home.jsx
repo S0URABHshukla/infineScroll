@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import home from './Home.module.css'
 import ListComponents from '../ListComponenets/ListComponents';
 import Navbar from '../Navbar/Navbar';
 import SkeletonLoader from '../SkeletonLoader/SkeletonLoader';
@@ -54,7 +55,7 @@ function Home() {
       {loader
       ?
       < >
-      <div style={{display:"grid", gridTemplateColumns:"repeat(4,1fr)",backgroundColor:'#BBCCF7',gap:"20px"}}>
+      <div className={home.skeleton}>
       <SkeletonLoader/>
       <SkeletonLoader/>
       <SkeletonLoader/>

@@ -1,3 +1,11 @@
+.container
+{
+    display: flex;
+    background-color: ghostwhite;
+    height: 100vh;
+    justify-content: center;
+    margin: auto;
+}
 .loginContainer
 {
     margin-top:100px;
@@ -8,5 +16,5 @@
 .login
 {
     font-family:cursive;
-    color: black;
+    color: rgb(37, 32, 32);
 }

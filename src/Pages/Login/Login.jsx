@@ -20,7 +20,6 @@ import { AuthContext } from '../../components/Auth/Auth';
 
 function Login() {
   const { notify, setNotify } = useContext(AuthContext);
-  // console.log(notify);
   const navigate=useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const handleClickShowPassword = () => setShowPassword((show) => !show);
@@ -69,10 +68,13 @@ function Login() {
     }    
   }
   return (
-    <div style={{backgroundColor:'ghostwhite',height:"100vh",display:"flex",justifyContent:"center",margin:"auto"}}>
-      <div className={login.loginContainer}>
+    <div className={login.container}>
+      <div className={login.loginContainer}>        
+      
+        {/* this components show that user is Successfully login or not */}
       <Notification notify={notify} setNotify={setNotify} />
-        <Avatar sx={{ width: '4ch',margin:"auto",marginTop:"10px"}}>
+
+        <Avatar sx={{ width: '4ch',margin:"auto",marginTop:"10px",color:"green"}}>
           <LockIcon />
         </Avatar>
         <h2 className={login.login}>LOGIN</h2>
